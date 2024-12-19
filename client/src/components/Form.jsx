@@ -53,7 +53,7 @@ function Form() {
     if (Object.keys(errors).length > 0) return;  
 
     try {
-      const res = await axios.post("http://localhost:3036/emp", form);
+      const res = await axios.post("http://172.31.2.212:3036/emp", form);
       alert(res.data.message);
       setForm({
         name: "",
